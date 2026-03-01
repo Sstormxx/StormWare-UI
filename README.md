@@ -82,5 +82,20 @@ end)
 UI.AddLabel(SettingsTab, "StormWare v1.0 - Made with 💙")
 UI.AddLabel(SettingsTab, "Press RightShift to toggle UI")
 
+| Function                                                  | Description               | Parameters                                                |
+| --------------------------------------------------------- | ------------------------- | --------------------------------------------------------- |
+| `UI.SetTitle(text)`                                       | Change window title       | `text` (string)                                           |
+| `UI.SetToggleKey(key)`                                    | Change hide/show key      | `key` (Enum.KeyCode)                                      |
+| `UI.AddTab(name, icon)`                                   | Create a new tab          | `name` (string), `icon` (string, optional)                |
+| `UI.AddSection(parent, title)`                            | Create a section/groupbox | `parent` (tab), `title` (string)                          |
+| `UI.AddButton(parent, text, callback)`                    | Create a button           | `parent`, `text` (string), `callback` (function)          |
+| `UI.AddToggle(parent, text, default, callback)`           | Create a toggle switch    | `parent`, `text`, `default` (bool), `callback` (function) |
+| `UI.AddSlider(parent, text, min, max, default, callback)` | Create a slider           | `parent`, `text`, `min`, `max`, `default`, `callback`     |
+| `UI.AddDropdown(parent, text, options, callback)`         | Create a dropdown         | `parent`, `text`, `options` (table), `callback`           |
+| `UI.AddKeybind(parent, text, defaultKey, callback)`       | Create a keybind button   | `parent`, `text`, `defaultKey`, `callback`                |
+| `UI.AddTextBox(parent, text, placeholder, callback)`      | Create a text input       | `parent`, `text`, `placeholder`, `callback`               |
+| `UI.AddLabel(parent, text)`                               | Create text label         | `parent`, `text` (string)                                 |
+
+
 <img width="745" height="537" alt="image" src="https://github.com/user-attachments/assets/4bbb3dbe-0493-4c7f-902e-3f2ff7808869" />
 
