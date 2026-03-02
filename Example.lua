@@ -79,7 +79,7 @@ end)
 
 -- INPUTBOX
 
-local input = StormWare.AddInputBox(mySection, "Username", "Enter your name...", "Player1", function(value)
+local input = UI.AddTextBox(mySection, "Username", "Enter your name...", "Player1", function(value)
     print("Input changed:", value)
 end)
 
