@@ -22,9 +22,8 @@ UI.AddButton(PlayerSection, "Button", function()
 end)
 
 -- TOGGLE (returns object with :Get() and :Set() methods)
-local LocalToggle = UI.AddToggle(PlayerSection, "Toggle", false, function(value)
-    print("Speed enabled:", value)
-    -- Enable/disable speed code here
+local LocalToggle = UI.AddToggle(PlayerSection, "Toggle", false, function(value))
+    -- Enable/disable code here
 end)
 
 -- SLIDER (returns object with :Get() and :Set() methods)
@@ -33,8 +32,8 @@ local LocalSlider = UI.AddSlider(PlayerSection, "Slider", 16, 200, 50, function(
 end)
 
 -- DROPDOWN (returns object with methods)
-local LocalDropdown = UI.AddDropdown(PlayerSection, "Dropdown", {"Spawn", "Shop", "Base", "Secret"}, function(selected)
-    print("Teleporting to:", selected)
+local LocalDropdown = UI.AddDropdown(PlayerSection, "Dropdown", {"A", "B", "C", "D"}, function(selected)
+-- Dropdown code here
 end)
 
 -- KEYBIND (returns object with methods)
